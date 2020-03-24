@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.xml.xmlDiffXlsx]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.xml.xmlDiffXlsx">
+        <methods>
+          <include name="createList"/>
+          <include name="writeDifferences"/>
+          <include name="main"/>
+        </methods>
+      </class> <!-- com.xml.xmlDiffXlsx -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.xml.xmlDiffXlsx] -->

@@ -1,0 +1,82 @@
+<manifest:MediaManifest xmlns:manifest="manifest/v1.5/AssessmentComparision" xmlns:md="md/v2.4/AssessmentComparision" xmlns:xs="AssessmentComparision" xmlns:xsi="AssessmentComparision-instance">
+    <manifest:Tag1>
+        <manifest:SpecVersion>10.5</manifest:SpecVersion>
+        <manifest:Profile>PPMMC-1</manifest:Profile>
+    </manifest:Tag1>
+    <manifest:Tag2>
+        <manifest:Audio AudioTrackID="md:audtrackid:testID-x:0000-1111-2222-3333-4444-y:feature.primary.51st.es-419.aud">
+            <md:Type>primary</md:Type>
+            <md:Language dubbed="true">TEST-419</md:Language>
+            <manifest:ContainerReference>
+                <manifest:ContainerLocation>c://qatest/TEST_INT_C_EST_CTFRMOV_23_LAS_ALL_LAS-51ST_RT022003.mov</manifest:ContainerLocation>
+            </manifest:ContainerReference>
+        </manifest:Audio>
+        <manifest:Video VideoTrackID="md:vidtrackid:testID-x:0000-1111-2222-3333-4444-y:feature.vid.es-419.dubcard">
+            <md:Type>primary</md:Type>
+            <md:Picture>
+                <md:WidthPixels>1911</md:WidthPixels>
+                <md:HeightPixels>1020</md:HeightPixels>
+                <md:ActiveWidthPixels>2920</md:ActiveWidthPixels>
+                <md:ActiveHeightPixels>1804</md:ActiveHeightPixels>
+            </md:Picture>
+            <md:CardsetList>
+                <md:Cardset>
+                    <md:Type>DubbingCredit</md:Type>
+                    <md:Language>es-419</md:Language>
+                </md:Cardset>
+            </md:CardsetList>
+            <manifest:ContainerReference>
+                <manifest:ContainerLocation>c://qatest/TEST_INT_C_EST_DUBCARDMOVHD_23_LAS_240_MOS-XX_RT000008.mov</manifest:ContainerLocation>
+            </manifest:ContainerReference>
+        </manifest:Video>
+        <manifest:Subtitle SubtitleTrackID="md:subtrackid:testID-x:0000-1111-2222-3333-4444-y:feature.forced.pt-br.sub">
+            <md:Type>forced</md:Type>
+            <md:Language>pt-BR</md:Language>
+            <manifest:ContainerReference>
+                <manifest:ContainerLocation>c://qatest/TEST_INT_C_EST_SUBFRCITT_23_BPO_240_MOS-XX_RT022003.itt</manifest:ContainerLocation>
+            </manifest:ContainerReference>
+        </manifest:Subtitle>
+        <manifest:Metadata ContentID="md:cid:testID-x:0000-1111-2222-3333-4444-y:trailer.en.11">
+            <manifest:ContainerReference>
+                <manifest:ContainerLocation>c://qatest/5655-6766-7877-8988-9199-Y-MovieMetadata_trailer_en_11.xml</manifest:ContainerLocation>
+            </manifest:ContainerReference>
+        </manifest:Metadata>
+    </manifest:Tag2>
+    <manifest:Tag3>
+        <manifest:Presentation PresentationID="md:presentationid:testID-x:5655-6766-7877-8988-9199-y:feature.en">
+            <manifest:TrackMetadata>
+                <manifest:TrackSelectionNumber>0</manifest:TrackSelectionNumber>
+                <manifest:VideoTrackReference>
+                    <manifest:VideoTrackID>md:vidtrackid:testID-x:5555-6666-7777-8888-9999-y:feature.primary.en.vid</manifest:VideoTrackID>
+                </manifest:VideoTrackReference>
+            </manifest:TrackMetadata>
+        </manifest:Presentation>
+    </manifest:Tag3>
+    <manifest:Tag4>
+        <manifest:PlayableSequence PlayableSequenceID="md:playablesequenceid:testID-x:5555-6666-7777-8888-9999-y:feature">
+            <manifest:Clip sequence="0">
+                <manifest:PresentationID>md:presentationid:testID-x:5555-6666-7777-8888-9999-y:feature.en</manifest:PresentationID>
+            </manifest:Clip>
+            <manifest:Clip sequence="1" audioLanguage="en">
+                <manifest:PresentationID>md:presentationid:testID-x:5555-6666-7777-8888-9999-y:dubcard.en</manifest:PresentationID>
+            </manifest:Clip>
+        </manifest:PlayableSequence>
+    </manifest:Tag4>
+    <manifest:Tag5>
+        <manifest:Experience ExperienceID="md:experience:testID-x:0000-1111-2222-3333-3333-y:feature" version="1.0">
+        <manifest:Language>en</manifest:Language>
+        <manifest:ContentID>md:cid:testID-x:0000-1111-2222-3333-3333-y:feature.en</manifest:ContentID>
+        <manifest:Audiovisual ContentID="md:cid:testID-x:0000-1111-2222-3333-3333-y:feature.en">
+            <manifest:Type>Main</manifest:Type>
+            <manifest:SubType>Feature</manifest:SubType>
+            <manifest:PlayableSequenceID>md:playablesequenceid:testID-x:0000-1111-2222-3333-3333-y:feature</manifest:PlayableSequenceID>
+        </manifest:Audiovisual>
+        </manifest:Experience>
+    </manifest:Tag5>
+    <manifest:Tag6>
+        <manifest:ATLDExperienceMap>
+            <manifest:ATLD>md:alid:testID-x:0000-1111-2222-3333-3333-y</manifest:ATLD>
+            <manifest:ExperienceID>md:experience:testID-x:0000-1111-2222-3333-3333-y:feature</manifest:ExperienceID>
+        </manifest:ATLDExperienceMap>
+    </manifest:Tag6>
+</manifest:MediaManifest>
