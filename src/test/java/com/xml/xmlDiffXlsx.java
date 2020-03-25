@@ -15,6 +15,10 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 public class xmlDiffXlsx {
 
+    /*
+     The xmlUnit here is used to define the input and out output data types
+     The difference is then returns the List
+     */
     public static List compareXmlFile(Reader origin, Reader dest) throws IOException, SAXException {
 
         //instance to comapare two files
@@ -29,7 +33,9 @@ public class xmlDiffXlsx {
 
     }
 
-
+    /*
+      The pojo class was created to read them as objects using the construct/getter and setter
+     */
     public class DiffPojo {
 
         private String differences;
@@ -50,14 +56,19 @@ public class xmlDiffXlsx {
     }
 
 
+    /*
+      Instantiating the List that need to be loaded into the sheet
+     */
 
     public static void createList(Object diffpojo, Row row){
         Cell cell = row.createCell(0);
         cell.setCellValue(diffpojo.toString());
     }
 
-
-    // XML unit has a paramter called differences of data type List
+   /*
+       XML unit has a paramter called differences of data type List
+       Create the workbook and populate the differences into the excel sheet
+    */
     public static void writeDifferences(List differences) {
 
         // create the sheet in a workbook
